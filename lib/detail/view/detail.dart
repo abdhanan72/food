@@ -9,7 +9,7 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DEFO'),
+        title: Text('Potato'),
         automaticallyImplyLeading: false,
       ),
       body: SingleChildScrollView(
@@ -46,7 +46,8 @@ class DetailScreen extends StatelessWidget {
               height: 20,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              
               children: [
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
@@ -56,6 +57,13 @@ class DetailScreen extends StatelessWidget {
                     label: Text(prode['price'].toString()),),
 
                     
+
+                    ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFFF50514),),
+                      onPressed: () {
+                      
+                    }, icon:Icon(Icons.shopping_bag), label: Text('ADD TO CART'))
 
               ],
             )

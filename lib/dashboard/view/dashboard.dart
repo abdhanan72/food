@@ -29,13 +29,8 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Product List'),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.person),
-          ),
-        ],
+        title: const Text('Potato'),
+        
       ),
       body: _widgets[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
