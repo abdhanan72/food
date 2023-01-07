@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food/cart/view/cart.dart';
+import 'package:food/drawer/view/drawer.dart';
 import 'package:food/home/view/home.dart';
 
 class Dashboard extends StatefulWidget {
@@ -28,7 +29,10 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      
+      drawer: DrawerScreen(),
+      appBar: AppBar(shadowColor: Color(0xFFF50514),
+        elevation: 10,
         title: const Text('Potato'),
         
       ),
