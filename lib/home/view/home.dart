@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter/material.dart';
 import 'package:food/detail/view/detail.dart';
+import 'package:searchfield/searchfield.dart';
 
 class Home extends StatelessWidget {
   Home({super.key});
@@ -17,6 +18,27 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal:  16),
+              child: TextField(
+                        
+                        cursorColor: const Color(0xFFF50514),
+                        decoration: InputDecoration(
+                          hintText: 'Search your favourite dishes',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          prefixIcon: const Icon(
+                            Icons.search,
+                            color: Color(0xFFF50514),
+                          ),
+                          fillColor: Colors.grey.shade300,
+                        ),
+                      ),
+            ),
             Container(
               height: 150,
               width: 600,

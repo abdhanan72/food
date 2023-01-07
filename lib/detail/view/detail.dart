@@ -85,6 +85,9 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(elevation: 0,backgroundColor: Colors.red.shade400,
+        
+        ),
         backgroundColor: Colors.red.shade400,
         body: Stack(alignment: Alignment.topCenter,
           children: [
