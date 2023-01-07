@@ -38,6 +38,8 @@ class Home extends StatelessWidget {
                               DetailScreen(prode: productItems[index]),
                         )),
                     child: Card(
+                      shadowColor: Color(0xFFF50514),
+                      elevation: 10,
                       child: Column(
                         children: [
                           const SizedBox(
