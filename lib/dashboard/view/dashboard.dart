@@ -30,9 +30,13 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      drawer: DrawerScreen(),
-      appBar: AppBar(shadowColor: Color(0xFFF50514),
-        elevation: 10,
+      
+      appBar: AppBar(
+
+        leading: IconButton(onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => DrawerScreen(),)), icon:Icon(Icons.person,color: Colors.black,)),
+
+        elevation: 0,
+        backgroundColor: Colors.white,
         title: const Text('Potato'),
         
       ),
